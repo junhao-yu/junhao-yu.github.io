@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Junhao Yu 的个人主页" />
+    <title>Junhao Yu | 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top" aria-label="返回顶部">JY<span>.</span></a>
+        <div class="portrait" aria-label="Junhao Yu 头像占位"><span>JY</span></div>
+        <h1>Junhao Yu</h1>
+        <p class="role">Researcher &amp; Builder</p>
+        <p class="affiliation">在此填写你的学校、公司或实验室</p>
+
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://github.com/yu-junhao" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#" aria-label="请替换为你的 Google Scholar 链接">Scholar</a>
+          <a href="#" aria-label="请替换为你的简历链接">CV</a>
+        </div>
+
+        <nav aria-label="页面导航">
+          <a class="active" href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+        </nav>
+        <p class="sidebar-footer">© <span id="year"></span> Junhao Yu</p>
+      </aside>
+
+      <main id="top" class="content">
+        <section id="about" class="intro section">
+          <p class="eyebrow">HELLO, I AM</p>
+          <h2>Junhao <em>Yu.</em></h2>
+          <p class="lead">我专注于探索智能系统与真实世界之间更自然、更可靠的连接方式。</p>
+          <p>这里是我的个人主页。你可以在这里了解我的研究兴趣、近期动态和正在进行的项目。请将本段替换为你的个人简介，例如教育背景、研究方向或希望解决的问题。</p>
+          <p>我的兴趣包括 <strong>人工智能</strong>、<strong>计算机视觉</strong>、<strong>机器人</strong> 与 <strong>人机交互</strong>。我始终期待与志同道合的研究者和创作者交流合作。</p>
+          <div class="action-row">
+            <a class="button" href="mailto:your-email@example.com">联系我 <span>↗</span></a>
+            <a class="text-link" href="#publications">查看研究 <span>↓</span></a>
+          </div>
+        </section>
+
+        <section id="news" class="section">
+          <div class="section-heading"><p class="eyebrow">WHAT'S NEW</p><h3>最新动态</h3></div>
+          <ol class="news-list">
+            <li><time>2026.09</time><p>欢迎来到我的个人主页！我正在持续更新研究与项目内容。</p></li>
+            <li><time>2026.06</time><p>在此填写一条重要动态，例如论文发表、获奖或加入新的团队。</p></li>
+            <li><time>2026.03</time><p>在此填写一条活动记录，例如演讲、开源发布或合作项目。</p></li>
+          </ol>
+        </section>
+
+        <section id="publications" class="section">
+          <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h3>论文与研究</h3></div>
+          <article class="publication">
+            <div class="pub-number">01</div>
+            <div><h4>在此填写你的代表性研究工作</h4><p class="authors"><strong>Junhao Yu</strong>, Collaborator Name, et al.</p><p class="venue">Conference / Journal, 2026</p><p class="abstract">用一两句话概述这项工作解决的问题、方法亮点和实际价值。</p><div class="pub-links"><a href="#">Paper</a><a href="#">Project</a><a href="#">Code</a></div></div>
+          </article>
+          <article class="publication">
+            <div class="pub-number">02</div>
+            <div><h4>在此填写另一项研究或技术文章</h4><p class="authors">Author Name, <strong>Junhao Yu</strong>, et al.</p><p class="venue">Conference / Journal, 2025</p><p class="abstract">简要介绍研究的核心贡献。每篇论文均可替换为真实标题、作者、会议和链接。</p><div class="pub-links"><a href="#">Paper</a><a href="#">Project</a></div></div>
+          </article>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="section-heading"><p class="eyebrow">IN PROGRESS</p><h3>项目</h3></div>
+          <div class="project-grid">
+            <article class="project-card accent-card"><span class="tag">FEATURED</span><h4>项目名称 A</h4><p>介绍一个你正在推进的研究、产品或开源项目。</p><a href="#">了解更多 <span>↗</span></a></article>
+            <article class="project-card"><span class="tag">OPEN SOURCE</span><h4>项目名称 B</h4><p>使用简短说明，让访客快速理解项目的目标和特色。</p><a href="#">查看项目 <span>↗</span></a></article>
+          </div>
+        </section>
+        <footer>Designed for <a href="https://yu-junhao.github.io">yu-junhao.github.io</a> · Last updated <span id="updated"></span></footer>
+      </main>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear(); document.getElementById('updated').textContent = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: 'long' }).format(new Date());</script>
+  </body>
+</html>
