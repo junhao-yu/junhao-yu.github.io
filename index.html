@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="余军浩的个人主页：具身智能、视觉-语言-动作模型与世界-动作模型研究。" />
-    <meta name="theme-color" content="#0b1210" />
+    <meta name="theme-color" content="#f2f3ed" />
     <meta property="og:title" content="余军浩 | 具身智能算法工程师" />
     <meta property="og:description" content="专注 VLA / WAM、双臂长程操作与真机部署。" />
     <meta property="og:image" content="assets/images/folding-poster.jpg" />
@@ -35,8 +35,7 @@
         <nav aria-label="页面导航">
           <a class="active" href="#about"><span>01</span>关于我</a>
           <a href="#work"><span>02</span>研究与项目</a>
-          <a href="#experience"><span>03</span>经历</a>
-          <a href="#education"><span>04</span>教育与荣誉</a>
+          <a href="#education"><span>03</span>教育与荣誉</a>
         </nav>
 
         <div class="sidebar-bottom">
@@ -54,7 +53,7 @@
           <div class="hero-grid" aria-hidden="true"></div>
           <div class="hero-copy reveal">
             <p class="section-code">01 / ABOUT</p>
-            <h2>让机器人在真实世界中<br /><em>更可靠地行动。</em></h2>
+            <h2>让机器人在真实世界中，<em>更可靠地行动。</em></h2>
             <p class="hero-lead">我专注于视觉-语言-动作模型、世界-动作模型与双臂长程操作，关注从数据闭环、策略学习到真机实时部署的完整链路。</p>
             <p class="hero-note">现就读于北京理工大学自主智能无人系统全国重点实验室，控制工程硕士在读。研究方向为 <strong>VLA / WAM</strong>，持续探索长时序任务中的状态理解、记忆建模与可靠执行。</p>
             <div class="hero-actions">
@@ -157,45 +156,9 @@
           </article>
         </section>
 
-        <section id="experience" class="experience section-pad">
-          <header class="section-head reveal">
-            <p class="section-code">03 / EXPERIENCE</p>
-            <div><h3>实践经历</h3><p>面向真实机器人系统，把研究方法落实到稳定、可复现的部署结果。</p></div>
-          </header>
-
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-date">2026.06 — 2026.09</div>
-              <div>
-                <p class="company">魔法原子机器人科技有限公司 · 多模态智能体</p>
-                <h4>VLA 算法实习生 · 真机推理优化</h4>
-                <ul>
-                  <li><strong>少步采样：</strong>分析 Flow Matching 不同积分阶段的速度场特性，设计两阶段非等间隔采样，将 NFE 从 10 步降至 2 步，π0.5 推理耗时由 61.557 ms 降至 21.956 ms，实现 2.804× 加速。</li>
-                  <li><strong>实时执行：</strong>搭建分布式、线程解耦的 VLA/WAM 推理与执行框架，实现模型推理、Action Chunk 缓冲、动作发布与机器人控制的异步调度及时间对齐。</li>
-                  <li><strong>真机评测：</strong>基于双臂长时程叠衣与厨房收纳任务，统一部署并评测 RTC、Legato、VLASH、Temporal Smoothing 等 6 种实时执行策略。</li>
-                </ul>
-                <div class="tag-row"><span>Flow Matching</span><span>π0.5</span><span>Real-time Control</span><span>Dual-arm</span></div>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <div class="timeline-date">2026.04 — 2026.06</div>
-              <div>
-                <p class="company">Dobot 越疆机器人 · 具身智能部门</p>
-                <h4>具身算法实习生 · 跨本体 VLA 迁移</h4>
-                <ul>
-                  <li><strong>迁移框架：</strong>构建 Joint/TCP Retarget + URDF/视觉对齐 + IK Mapping 的三阶段迁移流程；基于多帧 Mask/FK Projection IoU 自动搜索 Camera/Base XYZ Offset，将末端/视觉对齐误差由 10 mm 降至 &lt;3 mm。</li>
-                  <li><strong>数据与模型：</strong>将松灵机器人 demonstration 转换为视源目标本体训练数据，基于 6000+ Retarget + DAgger 轨迹训练 π0.5；目标机器人叠衣任务真机评测达到 26/30（86.7%）成功率。</li>
-                </ul>
-                <div class="tag-row"><span>Retargeting</span><span>URDF</span><span>IK</span><span>DAgger</span></div>
-              </div>
-            </article>
-          </div>
-        </section>
-
         <section id="education" class="education section-pad">
           <header class="section-head reveal">
-            <p class="section-code">04 / EDUCATION</p>
+            <p class="section-code">03 / EDUCATION</p>
             <div><h3>教育与荣誉</h3><p>控制、机器人与具身智能交叉背景。</p></div>
           </header>
 
